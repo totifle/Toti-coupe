@@ -1,0 +1,26 @@
+;MAKROTYP=0
+;INSTVERSION=
+;EXEVERSION=7.5.5.93[Hops.exe]
+;BILD=
+;INFO=B_MC
+;WZGV=1000037410
+;WZGVCONFIG=
+;MASCHINE=B_MC_V7
+;NCNAME=mateo
+;KOMMENTAR=
+;DX=0
+;DY=0
+;DZ=0
+;DIALOGDLL=Dialoge.Dll
+;DIALOGPROC=StandardFormAnzeigen
+;DIALOGKIND=0
+;AUTOSCRIPTSTART=1
+;BUTTONBILD=
+;DIMENSION_UNIT=0
+VARS
+   DX := {finW};*VAR*
+   DY := {finH};*VAR*
+   DZ := {epaisseur};*VAR*
+START
+Fertigteil (DX,DY,DZ,0,0,{decX},{decY},0,'',0,0,0,0)
+CALL Formater_alaise_variable ( VAL ALAISE_DEVANT:={Chant_AV},ALAISE_DERRIERE:={Chant_AR},ALAISE_GAUCHE:={Chant_G},ALAISE_DROITE:={Chant_D})
